@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+
+.announcement-page {
+  padding: 20px;
+  background-color: $soft-bg;
+  min-height: 100vh;
+  color: $main-color;
+
+  .headerWithButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    h1 {
+      color: $main-color;
+      margin: 0;
+    }
+
+    .addAnnouncementBox {
+      display: flex;
+      gap: 10px;
+
+      .actionButton {
+        background-color: $dark-bg;
+        color: $main-color;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: lighten($dark-bg, 10%);
+        }
+      }
+    }
+  }
+
+  .announcementGrid {
+    background-color: $dark-bg;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 20px;
+  }
+}
